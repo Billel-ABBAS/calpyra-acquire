@@ -188,38 +188,99 @@
 <!-- ─── APP PREVIEW SCREENSHOTS + INTERNAL TESTING CTA ───────────── -->
 <section id="app-preview" class="max-w-6xl mx-auto px-6 py-20 border-t border-white/5">
   <div class="text-center max-w-3xl mx-auto">
-    <h2 class="display text-3xl md:text-5xl font-bold">See the app in <span class="text-flame-500">action</span></h2>
-    <p class="mt-4 text-white/70">Full mobile experience — 21 polished screens built with React Native + Expo, deployed to Google Play.</p>
+    <h2 class="display text-3xl md:text-5xl font-bold">From meal photo to <span class="text-flame-500">calorie tracking</span> in 3 seconds</h2>
+    <p class="mt-4 text-white/70">Real workflow captured live — GPT-5.4 Vision + Architecture C cascade pipeline analyzing an actual chicken platter photo.</p>
   </div>
 
-  <div class="mt-12 grid sm:grid-cols-3 gap-8 items-end">
-    <!-- Screen 1: Welcome -->
+  <!-- Real workflow: 4 phone mockups showing the AI scan journey -->
+  <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 items-end">
     <div class="flex flex-col items-center">
       <div class="phone-frame">
-        <img src="./screenshots/01-welcome.png" alt="Calpyra AI welcome screen showing 4 core features" />
+        <img src="./screenshots/01-home.png" alt="Calpyra Home — 2420 kcal daily budget, On track" />
       </div>
-      <h3 class="mt-5 font-bold text-lg">Welcome & Features</h3>
-      <p class="text-sm text-white/60 text-center mt-1 max-w-xs">AI meal analysis · Personalized tracking · Coach · Activity</p>
+      <div class="mt-4 text-center">
+        <div class="text-flame-500 font-bold text-xs tracking-wide">STEP 1</div>
+        <h3 class="font-bold text-base mt-1">Home dashboard</h3>
+        <p class="text-xs text-white/60 mt-1">2,420 kcal goal · macros · weight tracking · Health Connect data</p>
+      </div>
     </div>
-    <!-- Screen 2: Gender personalization -->
     <div class="flex flex-col items-center">
       <div class="phone-frame">
-        <img src="./screenshots/02-gender.png" alt="Onboarding step 1 of 15 — gender personalization" />
+        <img src="./screenshots/02-scan-menu.png" alt="Scan menu — Photo / Camera / Manual / Barcode" />
       </div>
-      <h3 class="mt-5 font-bold text-lg">15-step onboarding</h3>
-      <p class="text-sm text-white/60 text-center mt-1 max-w-xs">Personalizes macros + targets via BMR + activity level + diet preferences</p>
+      <div class="mt-4 text-center">
+        <div class="text-flame-500 font-bold text-xs tracking-wide">STEP 2</div>
+        <h3 class="font-bold text-base mt-1">Pick input method</h3>
+        <p class="text-xs text-white/60 mt-1">Photo (gallery) · Camera · Manual entry · Barcode (EAN/UPC/Code128)</p>
+      </div>
     </div>
-    <!-- Screen 3: Goal selection -->
     <div class="flex flex-col items-center">
       <div class="phone-frame">
-        <img src="./screenshots/03-goal.png" alt="Goal selection: Lose weight, Maintain, Build muscle" />
+        <img src="./screenshots/03-ai-analysis.png" alt="AI analysis — gpt5_vision detects roast chicken 99% confidence" />
       </div>
-      <h3 class="mt-5 font-bold text-lg">Adaptive goals</h3>
-      <p class="text-sm text-white/60 text-center mt-1 max-w-xs">Lose weight, Maintain, or Build muscle — each unlocks a custom calorie deficit/surplus plan</p>
+      <div class="mt-4 text-center">
+        <div class="text-flame-500 font-bold text-xs tracking-wide">STEP 3</div>
+        <h3 class="font-bold text-base mt-1">AI detects 5 foods</h3>
+        <p class="text-xs text-white/60 mt-1">99% roast chicken · 97% sweet potato · 98% potatoes · 99% peas · 96% Brussels sprouts</p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center">
+      <div class="phone-frame">
+        <img src="./screenshots/04-detected-foods.png" alt="Foods breakdown with macros and AI-estimated weight" />
+      </div>
+      <div class="mt-4 text-center">
+        <div class="text-flame-500 font-bold text-xs tracking-wide">STEP 4</div>
+        <h3 class="font-bold text-base mt-1">Macros + weight</h3>
+        <p class="text-xs text-white/60 mt-1">Per-food macros, AI-estimated grams, edit if needed, save meal</p>
+      </div>
     </div>
   </div>
 
-  <p class="mt-10 text-center text-sm text-white/50">+ 18 more screens : Home dashboard · AI meal scan · NutriCoach chat · Diary · Progress · Activity · Fasting · Health Connect · Settings · Paywall · Manual add · Food detail · Meal plan · Blood pressure · Glucose · Progress photos · Badges · Gallery</p>
+  <!-- Result: 4 more screens showing the data flow back to user -->
+  <div class="mt-16 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 items-end">
+    <div class="flex flex-col items-center">
+      <div class="phone-frame">
+        <img src="./screenshots/05-home-after.png" alt="Home updated — 1559 kcal left, recently eaten with photo thumbnail" />
+      </div>
+      <div class="mt-4 text-center">
+        <div class="text-flame-500 font-bold text-xs tracking-wide">STEP 5</div>
+        <h3 class="font-bold text-base mt-1">Home updated live</h3>
+        <p class="text-xs text-white/60 mt-1">1,559 kcal left · recently eaten with thumb · streak counter +1</p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center">
+      <div class="phone-frame">
+        <img src="./screenshots/06-diary.png" alt="Diary breakdown — 4 macro rings + lunch detail with each food" />
+      </div>
+      <div class="mt-4 text-center">
+        <div class="text-flame-500 font-bold text-xs tracking-wide">STEP 6</div>
+        <h3 class="font-bold text-base mt-1">Diary breakdown</h3>
+        <p class="text-xs text-white/60 mt-1">4 macro rings · meal-by-meal · per-food edit · AI badge on detected items</p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center">
+      <div class="phone-frame">
+        <img src="./screenshots/07-coach.png" alt="NutriCoach AI chat — personalized with live data" />
+      </div>
+      <div class="mt-4 text-center">
+        <div class="text-flame-500 font-bold text-xs tracking-wide">STEP 7</div>
+        <h3 class="font-bold text-base mt-1">NutriCoach AI</h3>
+        <p class="text-xs text-white/60 mt-1">Reads your live data: "Low protein: 98/232g" · personalized in 12 languages</p>
+      </div>
+    </div>
+    <div class="flex flex-col items-center">
+      <div class="phone-frame">
+        <img src="./screenshots/08-progress.png" alt="Progress charts — weekly calories, macros, weight tracking" />
+      </div>
+      <div class="mt-4 text-center">
+        <div class="text-flame-500 font-bold text-xs tracking-wide">STEP 8</div>
+        <h3 class="font-bold text-base mt-1">Progress tracking</h3>
+        <p class="text-xs text-white/60 mt-1">Weekly calories chart · macros · weight history · badges + streaks</p>
+      </div>
+    </div>
+  </div>
+
+  <p class="mt-10 text-center text-sm text-white/50">+ 13 more screens : Activity · Fasting · Health Connect · Settings · Paywall · Manual add · Food detail · Meal plan · Blood pressure · Glucose · Progress photos · Badges · Gallery</p>
 
   <!-- Try the app CTA — Google Play Internal Testing -->
   <div class="mt-12 bg-gradient-to-br from-flame-500/15 via-flame-500/5 to-transparent border border-flame-500/40 rounded-3xl p-8 md:p-10">
